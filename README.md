@@ -9,7 +9,6 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
   - [Screenshot](#screenshot)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
 
 ## Overview
 
@@ -24,9 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-### Links
+![](images/screenshot.png)
 
 click [here](https://your-live-site-url.com) to see preview
 
@@ -36,6 +33,8 @@ click [here](https://your-live-site-url.com) to see preview
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
+- Flex
 - CSS Grid
 - Mobile-first workflow
+
+

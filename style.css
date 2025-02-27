@@ -6,13 +6,15 @@
 
     --ff-primary: 'Work Sans', sans-serif;
     
-    --fs-heading: 0.9375rem;
+    --fs-heading-1: 2em;
+    --fs-heading-2: 0.9375rem;
     --fs-body: 0.875rem;
 }
 
 @media (min-width: 60em){
     :root{
-        --fs-heading: 1.3em;
+        --fs-heading-1: 3em;
+        --fs-heading-2: 1.3em;
         --fs-body: 1em;
     }
 }
@@ -42,7 +44,7 @@ body{
     display: flex;
     flex-direction: column;
     padding: 2em;
-    border-radius: 0.5em;
+    border-radius: 1.5em;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -51,27 +53,25 @@ body{
         background: url('images/background-pattern-desktop.svg'), var(--light-pink);
         background-repeat: no-repeat;
         background-size: contain;
-        margin-block: 5em;
+        margin-block: 10em;
     }
     
     .accordion-container{
         background-color: white;
         max-width: 50%;
-        flex-direction: column;
-        padding: 2em;
     }
 }
 
 .accordion-header{
     display: flex;
     gap: 1em;
-    font-size: 3em;
+    font-size: var(--fs-heading-1);
     font-weight: bold;
     margin-bottom: 0.5em;
 }
 
 .accordion-header img{
-    width: 8%;
+    width: 0.8em;
 }
 
 .faqs-list{
@@ -97,8 +97,12 @@ body{
     gap: 2em;
 }
 
+.question-tab img{
+    cursor: pointer;
+}
+
 .question-tab .question{
-    font-size: var(--fs-heading);
+    font-size: var(--fs-heading-2);
     font-weight: bold;
     color: var(--dark-purple);
     margin-bottom: 1em;
@@ -107,6 +111,10 @@ body{
 .question-tab .question:hover{
     color:hsl(292, 86%, 53%);
 }   
+
+.question.highlight{
+    color:hsl(292, 86%, 53%);
+}
 
 .answer{
     font-size: var(--fs-body);
@@ -118,7 +126,4 @@ body{
     display: none;
 }
 
-.question-tab img{
-    cursor: pointer;
-}
 

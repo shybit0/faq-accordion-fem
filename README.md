@@ -25,7 +25,7 @@ Users should be able to:
 
 ![](images/screenshot.png)
 
-click [here](https://your-live-site-url.com) to see preview
+click [here](https://shybit0.github.io/faq-accordion-fem/) to see preview
 
 ## My process
 
